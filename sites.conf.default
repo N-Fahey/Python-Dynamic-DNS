@@ -1,0 +1,7 @@
+{
+    "sites": [
+        "subdomain.example.com",
+        "subdomain2.example.com",
+        "subdomain.anotherexample.org"
+    ]
+}
