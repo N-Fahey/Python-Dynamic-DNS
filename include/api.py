@@ -47,3 +47,14 @@ def get_records() -> dict:
 
     #Return records dict
     return records
+
+def update_record(ids:dict, new_ip:str) -> dict:
+    url = API_BASE_URL + f"/zones/{ids['zone_id']}/dns_records/{ids['record_id']}"
+    headers = COMMON_HEADERS
+    data = {'content': new_ip}
+    
+    response = requests.patch(url,headers=headers,json=data).json()
+    if response['success']:
+        return {'success': True}
+    else:
+        return {'success': False, 'errors': response['errors']}
