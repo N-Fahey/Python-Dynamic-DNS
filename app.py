@@ -3,7 +3,7 @@ from include.config import load_config
 from include.data import load_ip, save_ip
 
 def main():
-
+    '''Script to process DNS updates for dynamic IP address'''
     # Configurable settings
     IP_FILENAME = 'data/ip.txt'
 
