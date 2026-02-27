@@ -1,3 +1,10 @@
+'''include/config.py
+Contains functions to manage user configuration of sites to update
+
+Functions:
+    load_config: Load configured sites to be updated
+'''
+
 import json
 
 def load_config(filepath:str):
